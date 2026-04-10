@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root{
     --main-red: #E8303F ;
     --light-red: #FF8A92;
@@ -16,14 +20,16 @@
 
     --white: white;
     --black: black;
-
+    box-sizing: border-box;
 
 }
 
 .container{
     display: grid;
-    grid-template-columns: 15vw 85vw;
-    grid-template-rows: 10vh 80vh;
+    grid-template-columns: calc(20vw - 5px) calc(80vw - 5px);
+    grid-template-rows: calc(20vh - 5px) calc(80vh - 5px);
+    width: 100vw;
+    height: 100vh;
     gap: 10px;
 }
 
@@ -56,13 +62,16 @@
     grid-row: 1;
 
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
 }
 
 .searchbar{
     padding-left: 10px;
+
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .searchbar .bar{
@@ -71,17 +80,35 @@
     background-color: grey;
 }
 
+.profile, .info {
+    color: var(--main-black);  /* fix this */
+}
+
 .profile{
     display: flex;
+    justify-self: left;
+    color: var(--main-white);
+
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .info{
     display: flex;
+    justify-content: flex-end;
+    color: var(--main-white);
+
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .buttons{
-    display: flex;
     gap: 10px;
+
+    grid-column: 2;
+    grid-row: 2;
 }
 
 .buttons .hbutton{
@@ -95,8 +122,7 @@
 }
 
 .head{
-    background-color: var(--main-black);
-    color: var(--main-white);
+    color: var(--main-black);
 }
 
 .pfp{
