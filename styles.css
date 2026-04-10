@@ -50,10 +50,57 @@
 .header{
     background-color: var(--main-white);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 10px;
 
     grid-column: 2;
     grid-row: 1;
 
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.searchbar{
+    padding-left: 10px;
+}
+
+.searchbar .bar{
+    height: 50%;
+    width: 90%;
+    background-color: grey;
+}
+
+.profile{
+    display: flex;
+}
+
+.info{
+    display: flex;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons .hbutton{
+    background-color: var(--main-red);
+    color: var(--main-white);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.head{
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+.pfp{
+    border-radius: 50%;
 }
 
 /*Projects*/
