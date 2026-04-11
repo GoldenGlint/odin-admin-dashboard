@@ -27,8 +27,8 @@
 
 .container{
     display: grid;
-    grid-template-columns: calc(20vw - 5px) calc(80vw - 5px);
-    grid-template-rows: calc(20vh - 5px) calc(80vh - 5px);
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
     width: 100vw;
     height: 100vh;
     gap: 10px;
