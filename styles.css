@@ -57,6 +57,18 @@
 
 /*Header*/
 
+/*SVGs first*/
+
+.scope{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.bell{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
 .header{
     background-color: var(--main-white);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
@@ -73,9 +85,11 @@
 
 .searchbar{
     padding-left: 10px;
-
+    display: flex;
     grid-column: 1;
     grid-row: 1;
+    gap: 5px;
+    align-items: center;
 }
 
 .searchbar .bar{
@@ -93,6 +107,8 @@
     display: flex;
     justify-self: left;
     color: var(--main-white);
+    align-items: center;
+    gap: 10px;
 
     grid-column: 1;
     grid-row: 2;
@@ -101,7 +117,10 @@
 .info{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     color: var(--main-white);
+    gap: 1.2rem;
+    padding-right: 20px;
 
     grid-column: 2;
     grid-row: 1;
@@ -114,6 +133,10 @@
 
     grid-column: 2;
     grid-row: 2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .buttons .hbutton{
@@ -123,6 +146,7 @@
     border-radius: 15px;
     font-size: 1rem;
     border: none;
+    height: min(50%, 2rem);
 
 }
 
@@ -130,12 +154,19 @@
     color: var(--main-black);
 }
 
+
 .pfp {
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: var(--mid-white);
     flex-shrink: 0;
+}
+
+
+.pfp.large{
+    width: 4rem;
+    height: 4rem;
 }
 
 /*Projects*/
