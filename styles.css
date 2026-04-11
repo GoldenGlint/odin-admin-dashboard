@@ -242,6 +242,21 @@
     background-color: var(--mid-red);
     border-radius: 8px;
     padding: 10px;
+    position: relative;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    gap: 4px;
+
+}
+
+.icons-container .icon {
+    fill: rgb(39, 39, 39);
 }
 
 .announcements{
