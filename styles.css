@@ -140,4 +140,8 @@
     background-color: var(--main-black);
     grid-column: 2;
     grid-row: 2;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 70% 30%;
 }
