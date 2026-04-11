@@ -34,7 +34,7 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 1fr;
     width: 100vw;
     height: 100vh;
     gap: 10px;
@@ -60,7 +60,7 @@
 }
 
 .side{
-    font-size: 1.4rem;
+    font-size: clamp(0.8rem, 1.2vw, 1.4rem); 
     color: var(--main-white);
     padding-left: 10px;
     margin: 10px;
@@ -235,8 +235,8 @@
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
     height: calc(100% - 1.5rem);
    
     padding-top: 10px;
@@ -316,7 +316,7 @@
 }
 
 .main{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-weight: 700;
     margin: 10px;
 }
